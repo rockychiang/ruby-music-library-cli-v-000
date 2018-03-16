@@ -5,4 +5,8 @@ class Song
   attr_reader
   @@all = []
   
+    def all
+      @@all
+    end
+  
 end
