@@ -27,6 +27,7 @@ class Song
   
   def self.new_from_filename(file)
     self.find_or_create_by_name(file.split(" - ")[1]).tap do |song|
+      song.artist = find_or_create_by_name(file.split(" - ")[0])
     
   end
   
