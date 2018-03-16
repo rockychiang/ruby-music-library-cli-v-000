@@ -19,4 +19,7 @@ class Artist
     song.artist = self if song.artist == nil
   end
   
+  def genres
+    self.songs.map{|song| song.genre}
+  
 end
