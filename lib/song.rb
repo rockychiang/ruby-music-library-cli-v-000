@@ -26,18 +26,16 @@ class Song
   end
   
   def self.new_from_filename(file)
-    self.find_or_create_by_name(file.split(" - ")[1]).tap do |song|
-      song.artist = Artist.find_or_create_by_name(file.split(" - ")[0])
-      song.genre = Genre.find_or_create_by_name(file.split(" - ")[2].chomp(".mp3"))
+    self.new(file.split(" - ")[1], Artist.find_or_create_by_name(file.split(" - ")[0]), song.genre = Genre.find_or_create_by_name(file.split(" - ")[2].chomp(".mp3")))
     end
   end
 
-  def self.new_from_filename(file)
-    self.find_or_create_by_name(file.split(" - ")[1]).tap do |song|
-      song.artist = Artist.find_or_create_by_name(file.split(" - ")[0])
-      song.genre = Genre.find_or_create_by_name(file.split(" - ")[2].chomp(".mp3"))
-    end
-  end
+#  def self.new_from_filename(file)
+#    self.find_or_create_by_name(file.split(" - ")[1]).tap do |song|
+#      song.artist = Artist.find_or_create_by_name(file.split(" - ")[0])
+#      song.genre = Genre.find_or_create_by_name(file.split(" - ")[2].chomp(".mp3"))
+#    end
+#  end
   
   def self.create_from_filename(file)
     self.new_from_filename(file)
