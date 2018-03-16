@@ -5,6 +5,8 @@ class Artist
   attr_reader
   @@all = []
   
+  def initialize
+  
   def self.all
     @@all
   end
