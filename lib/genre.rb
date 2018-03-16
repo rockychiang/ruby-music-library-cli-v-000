@@ -14,8 +14,8 @@ class Genre
     @songs = []
   end
   
-  def genres
-    self.songs.map{|song| song.genre}.uniq
+  def artists
+    self.songs.map{|song| song.artist}.uniq
   end
   
 end
