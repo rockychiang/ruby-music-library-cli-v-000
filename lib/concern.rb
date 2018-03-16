@@ -1,4 +1,7 @@
 module Concerns
+  module ClassMethod
+    
+  end
   module InstanceMethod
     
     def initialize(name)
