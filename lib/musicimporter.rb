@@ -6,7 +6,7 @@ class MusicImporter
   end
   
   def files
-    @files = Dir.entries(path).map{|f| f.ends_with?(".mp3")}
+    @files = Dir.entries(path).map{|f| f.end_with?(".mp3")}
   end
 
 end
