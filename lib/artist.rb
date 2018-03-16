@@ -8,6 +8,7 @@ class Artist
   def initialize(name)
     super
     @songs = []
+  end
   
   def self.all
     @@all
