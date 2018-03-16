@@ -2,7 +2,7 @@ class MusicImporter
   attr_accessor :files
   
   def initialize(path)
-    @files = []
+    @files = Dir.entries(path)
   end
 
 
