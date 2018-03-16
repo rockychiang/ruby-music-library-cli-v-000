@@ -6,7 +6,7 @@ class MusicImporter
   end
   
   def files
-    @files = Dir.entries(path)
+    @files = Dir.entries(path).map{|f| f.include?(".mp3")}
   end
 
 end
