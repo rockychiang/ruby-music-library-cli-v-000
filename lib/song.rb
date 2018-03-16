@@ -11,7 +11,6 @@ class Song
   
   def initialize(name)
     super
-    self.artist = artist
   end
   
 end
