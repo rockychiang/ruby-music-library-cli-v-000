@@ -30,7 +30,7 @@ module Concerns
       if self.find_by_name(name)
         self.find_by_name(name)
       else
-        
+        .new
       end
     end
   end
