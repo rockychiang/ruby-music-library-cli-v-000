@@ -1,8 +1,8 @@
 class Song
   include Concerns::InstanceMethod
   extend Concerns::ClassMethod
-  attr_accessor :name
-  attr_reader :artist
+  attr_accessor :name, :artist
+  attr_reader
   @@all = []
   
   def self.all
