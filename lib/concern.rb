@@ -6,8 +6,8 @@ module Concerns
     end
 
     def create(name)
-      self.new(name).tap do |song|
-        song.save
+      self.new(name).tap do |arg|
+        arg.save
       end
     end
     
