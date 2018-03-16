@@ -1,7 +1,7 @@
 module Concerns
-  module
+  module InstanceMethod
   
-end
+  end
   
   module Findable
     
