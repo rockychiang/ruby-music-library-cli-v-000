@@ -9,7 +9,7 @@ class Song
     @@all
   end
   
-  def initialize(name,artist=nil)
+  def initialize(name)
     super
     self.artist = artist
   end
