@@ -9,7 +9,7 @@ class Genre
     @@all
   end
     
-      def initialize(name)
+  def initialize(name)
     super
     @songs = []
   end
