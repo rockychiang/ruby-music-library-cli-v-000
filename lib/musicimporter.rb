@@ -6,7 +6,7 @@ class MusicImporter
   end
   
   def files
-    @files = Dir.entries(path).keep_if
+    @files = Dir.entries(path).keep_if{|f| f.end_with(".mp3")}
     binding.pry
   end
 
