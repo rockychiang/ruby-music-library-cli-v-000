@@ -22,7 +22,6 @@ module Concerns
   end
   
   module Findable
-    
     def find_by_name(name)
       
     end
