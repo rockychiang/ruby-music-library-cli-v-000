@@ -27,7 +27,7 @@ class Song
   
   def self.new_from_filename(file)
     self.new(file.split(" - ")[1]).tap do |arg|
-  end
+    end
   end
   
 end
