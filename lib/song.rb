@@ -9,15 +9,4 @@ class Song
     @@all
   end
   
-  def save
-    @@all << self
-  end
-
-  def self.create(name)
-    Song.new(name).tap do |song|
-      song.save
-    end
-  end
-    
-
 end
