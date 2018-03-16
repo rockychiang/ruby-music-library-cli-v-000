@@ -10,7 +10,6 @@ module Concerns
         arg.save
       end
     end
-    
   end
   
   module InstanceMethod
