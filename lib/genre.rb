@@ -1,6 +1,6 @@
 class Genre
   include Concerns::InstanceMethod
-  extend Concerns::ClassMethod
+  extend Concerns::ClassMethod, Concerns::Findable
   attr_accessor :name, :songs
   attr_reader
   @@all = []
