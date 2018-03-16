@@ -9,7 +9,7 @@ class Song
     @@all
   end
   
-  def initialize(name)
+  def initialize(name,artist=nil)
     super
     @songs = []
   end
