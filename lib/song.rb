@@ -11,7 +11,7 @@ class Song
   
   def initialize(name,artist=nil)
     super
-    @songs = []
+    self.artist = 
   end
   
 end
