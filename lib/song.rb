@@ -1,6 +1,6 @@
 class Song
   include Concerns::InstanceMethod
   attr_accessor
-  attr_reader
+  attr_reader :name
   
 end
