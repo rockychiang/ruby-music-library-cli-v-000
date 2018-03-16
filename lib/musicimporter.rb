@@ -1,7 +1,7 @@
 class MusicImporter
   attr_accessor
   
-  def initialize(file)
+  def initialize(path)
     
   end
   
