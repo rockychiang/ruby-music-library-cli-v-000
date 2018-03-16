@@ -5,13 +5,13 @@ class Artist
   attr_reader
   @@all = []
   
+  def self.all
+    @@all
+  end
+  
   def initialize(name)
     super
     @songs = []
-  end
-  
-  def self.all
-    @@all
   end
   
 end
