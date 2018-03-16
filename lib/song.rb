@@ -10,7 +10,7 @@ class Song
   end
   
   def initialize(name, artist=nil)
-    super
+    @name = name
   end
   
 end
