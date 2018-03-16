@@ -5,7 +5,9 @@ class Artist
   attr_reader
   @@all = []
   
-  def initialize
+  def initialize(name)
+    super
+    @songs = []
   
   def self.all
     @@all
