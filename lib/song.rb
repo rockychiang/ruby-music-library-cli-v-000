@@ -14,8 +14,9 @@ class Song
   end
 
   def self.create(name)
-    song = Song.new(name)
-    song.save
+    Song.new(name).tap do |song|
+      song.save
+    end
   end
     
 
