@@ -1,6 +1,5 @@
 module Concerns
   module ClassMethod
-    
     def destroy_all
       self.all.clear
     end
