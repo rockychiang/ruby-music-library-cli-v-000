@@ -16,6 +16,7 @@ class Song
   def create(name)
     song = Song.new(name)
     @@song << song
+  end
     
 
 end
