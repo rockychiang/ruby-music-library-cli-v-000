@@ -30,7 +30,9 @@ module Concerns
       if self.find_by_name(name)
         self.find_by_name(name)
       else
-        
+        self.new.tap do |name|
+          
+        end
       end
     end
   end
