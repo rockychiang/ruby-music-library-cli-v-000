@@ -4,6 +4,13 @@ module Concerns
     def destroy_all
       self.all.clear
     end
+
+    def self.create(name)
+      Song.new(name).tap do |song|
+        song.save
+      end
+    end
+
     
   end
   
@@ -13,6 +20,10 @@ module Concerns
       self.name = name
     end
   
+    def save
+      @@all << self
+    end
+
   end
   
   module Findable
