@@ -5,7 +5,7 @@ class Song
   attr_reader
   @@all = []
   
-    def all
+    def self.all
       @@all
     end
   
