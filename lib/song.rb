@@ -30,7 +30,7 @@ class Song
     self.new(
       file[1], 
       Artist.find_or_create_by_name(file[0]), 
-      Genre.find_or_create_by_name(file.split(" - ")[2].chomp(".mp3"))
+      Genre.find_or_create_by_name(file[2].chomp(".mp3"))
       )
   end
   
