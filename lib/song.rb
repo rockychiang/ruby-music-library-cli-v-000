@@ -5,4 +5,6 @@ class Song
   attr_reader
   @@all = []
   
+  
+  
 end
