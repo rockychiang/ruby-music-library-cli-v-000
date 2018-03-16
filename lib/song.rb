@@ -1,7 +1,7 @@
 class Song
   include Concerns::InstanceMethod
   extend Concerns::ClassMethod
-  attr_accessor :name, :artist
+  attr_accessor :name, :artist, :genre
   attr_reader
   @@all = []
   
