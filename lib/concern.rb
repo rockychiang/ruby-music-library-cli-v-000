@@ -1,9 +1,7 @@
 module Concerns
   module ClassMethod
     
-    def all
-      @@all
-    end
+
     
   end
   
