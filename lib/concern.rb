@@ -5,12 +5,11 @@ module Concerns
       self.all.clear
     end
 
-    def self.create(name)
+    def create(name)
       Song.new(name).tap do |song|
         song.save
       end
     end
-
     
   end
   
