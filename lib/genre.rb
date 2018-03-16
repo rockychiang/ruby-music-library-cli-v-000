@@ -1,4 +1,4 @@
-class Song
+class Genre
   include Concerns::InstanceMethod
   extend Concerns::ClassMethod
   attr_accessor :name
