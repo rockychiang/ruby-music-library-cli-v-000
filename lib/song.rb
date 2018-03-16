@@ -25,7 +25,7 @@ class Song
     genre.songs << self if !genre.songs.include?(self)
   end
   
-  def selfnew_from_filename(file)
+  def self.new_from_filename(file)
     
   end
   
