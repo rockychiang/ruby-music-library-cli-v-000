@@ -6,7 +6,7 @@ class MusicImporter
   end
   
   def files
-    @files = Dir.entries(path).
+    @files = Dir.entries(path).keep_if
     binding.pry
   end
 
